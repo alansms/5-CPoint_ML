@@ -77,7 +77,7 @@ As funções utilizadas foram escolhidas com base na eficácia em realizar as ta
 ## Como Executar o Projeto
 
 	1.	Clone o repositório:
-git clone https://github.com/seu_usuario/seu_repositorio.git
+https://github.com/alansms/5-CPoint_ML
 
 	2.	Instale as dependências:
 pip install -r requirements.txt
