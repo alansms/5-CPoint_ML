@@ -4,26 +4,68 @@ https://4-checkpointmachinelearning-uhbyg2zsazcjwnvhejwylw.streamlit.app
 
 ## Introdução
 
-Neste projeto, utilizamos o algoritmo K-means para agrupar vinhos com base em características químicas. O objetivo é identificar vinhos similares e entender como suas características se agrupam, o que pode ser útil para consumidores e produtores que buscam categorizar seus produtos.
+Este projeto utiliza o algoritmo K-means para agrupar vinhos com base em suas características químicas. O objetivo é identificar vinhos similares, ajudando consumidores e produtores a categorizar seus produtos de maneira eficiente.
 
-Problema e Solução Proposta
+Problema
 
-O problema que estamos abordando é a dificuldade em classificar vinhos de maneira eficiente com base em suas propriedades. Com a análise de agrupamento, podemos segmentar os vinhos em grupos, ajudando na identificação de padrões e características comuns. A solução proposta envolve o uso do algoritmo K-means, que é uma técnica popular de aprendizado não supervisionado para agrupamento.
+A dificuldade em classificar vinhos com base em suas propriedades químicas pode ser um desafio tanto para consumidores quanto para produtores. Com a grande variedade de vinhos disponíveis no mercado, é crucial entender como as diferentes características se correlacionam. A análise de agrupamento oferece uma maneira de segmentar vinhos em grupos que compartilham características comuns, facilitando a identificação de padrões e preferências.
 
-## Passo a Passo do Projeto
+Solução Proposta
+
+Para abordar esse problema, este projeto utiliza o algoritmo K-means, uma técnica de aprendizado não supervisionado, para agrupar vinhos com características semelhantes. Os dados são analisados e visualizados, permitindo que tanto os produtores quanto os consumidores identifiquem rapidamente quais vinhos são mais adequados a seus gostos ou necessidades.
+
+A solução inclui o uso de várias variáveis disponíveis na base de dados, como:
+	•	Teor Alcoólico
+	•	Acidez Málica
+	•	Cinzas
+	•	Alcalinidade das Cinzas
+	•	Magnésio
+	•	Fenóis Totais
+	•	Flavonoides
+
+O processo começa com o pré-processamento dos dados, seguido pelo ajuste do K-means e pela análise dos grupos formados. O uso do método Elbow e Silhouette Score ajuda a determinar o número ideal de clusters, proporcionando uma análise robusta.
+
+Visualização Gráfica com Streamlit
+
+Para tornar a análise interativa e acessível, utilizamos o Streamlit, uma poderosa biblioteca que permite criar interfaces web de maneira rápida e fácil. Com o Streamlit, o usuário pode interagir com os dados através de filtros, como seleção de localidade e faixa de teor alcoólico, além de visualizar gráficos que mostram a distribuição de características, como:
+	•	Distribuição do Teor Alcoólico
+	•	Método Elbow para determinar o número ideal de clusters
+	•	Silhouette Score para avaliação da qualidade do agrupamento
+	•	Visualização PCA dos clusters
+
+A interface do usuário é intuitiva, permitindo que qualquer pessoa, mesmo sem um profundo conhecimento em ciência de dados, compreenda facilmente as análises realizadas.
+
+Recursos Utilizados
+
+	•	Python: Linguagem de programação utilizada.
+	•	Pandas: Biblioteca para manipulação e análise de dados.
+	•	Scikit-learn: Biblioteca para aprendizado de máquina, utilizada para o algoritmo K-means.
+	•	Matplotlib e Seaborn: Bibliotecas para visualização de dados.
+	•	Streamlit: Biblioteca para criar a interface do usuário do aplicativo web.
+
+Passo a Passo do Projeto
 
 	1.	Pré-processamento dos Dados:
-	•	Remoção de colunas irrelevantes que não contribuem para a análise.
-	•	Tratamento de dados nulos para garantir que o modelo seja treinado com dados completos.
-	•	Normalização das características para que todas estejam na mesma escala, facilitando a comparação entre elas.
+	•	Remoção de colunas irrelevantes.
+	•	Tratamento de dados nulos.
+	•	Normalização das características químicas.
 	2.	Ajuste do K-means:
-	•	Aplicação do algoritmo K-means aos dados normalizados para agrupar os vinhos em categorias baseadas em suas características químicas.
+	•	Aplicação do algoritmo K-means aos dados normalizados.
 	3.	Método Elbow e Silhouette Score:
-	•	Implementação do método Elbow para determinar o número ideal de grupos (clusters) ao observar a variação interna entre os grupos à medida que o número de clusters aumenta.
-	•	Cálculo do Silhouette Score para avaliar a qualidade do agrupamento, permitindo entender quão bem cada vinho se encaixa em seu cluster.
+	•	Uso do método Elbow para determinar o número ideal de clusters.
+	•	Cálculo do Silhouette Score para avaliar a qualidade do agrupamento.
 	4.	Análise dos Grupos:
-	•	Análise das características médias dos vinhos em cada grupo.
-	•	Identificação do grupo com o maior teor alcoólico e o grupo com maior acidez, e comparações das características entre os grupos, como teor alcoólico, acidez, cinzas, etc.
+	•	Cálculo das características médias dos vinhos em cada grupo.
+	•	Identificação do grupo com maior teor alcoólico e o grupo com maior acidez.
+
+Gráficos
+
+A aplicação inclui os seguintes gráficos:
+	•	Distribuição do Teor Alcoólico:
+ 	•	Método Elbow:
+ 	•	Silhouette Score:
+  	•	Visualização PCA dos Clusters:
+   	•	Visualização PCA dos Clusters:
 
 ## Comentários e Justificativas
 
