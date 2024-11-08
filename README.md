@@ -1,4 +1,6 @@
 ## Análise de Agrupamento de Vinhos com K-means
+### Teste on-line do código:
+https://4-checkpointmachinelearning-uhbyg2zsazcjwnvhejwylw.streamlit.app
 
 ## Introdução
 
